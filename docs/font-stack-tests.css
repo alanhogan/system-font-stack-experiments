@@ -76,3 +76,6 @@ h2 {
 .emoji-table * + th, .emoji-table * + td {
   border-left: 1px solid #aaa;
 }
+table {
+  margin-bottom: 1.2em;
+}
