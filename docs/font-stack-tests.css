@@ -1,0 +1,63 @@
+html {
+  margin: 0; padding: 0;
+}
+body {
+  padding: 1.6em 0.8em;
+  margin: 0 auto;
+}
+html, body {
+  font-family: Palatino, Garamond, serif;
+  min-height: 100%;
+  background: white;
+  color: #333;
+}
+
+h1 {
+  font-size: 250%/1.4;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 150%/1.4;
+  font-weight: 300;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+
+
+.github-2017 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.github-2016 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.medium-2017 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.wp-admin-2017 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.emoji-table th {
+  min-width: 9em;
+}
+.emoji-table td {
+}
+.emoji-table th, .emoji-table td {
+  padding: 0.2em 0.6em;
+  text-align: center;
+}
+.emoji-table * + th, .emoji-table * + td {
+  border-left: 1px solid #aaa;
+}
