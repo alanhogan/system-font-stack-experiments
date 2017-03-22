@@ -72,11 +72,14 @@ h2 {
 .emoji-only-1 {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+.emoji-only-2 {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
 
 .emoji-table th {
-  min-width: 18vw;
 }
 .emoji-table td {
+  min-width: 9vw;
 }
 .emoji-table th, .emoji-table td {
   padding: 0.2em 0.6em;
