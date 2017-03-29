@@ -126,3 +126,35 @@ table {
 .nowrap {
   white-space: nowrap;
 }
+
+
+.guess-box {
+  padding: 0.6em;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+
+.yes {
+  color: #0a0;
+  font-weight: bolder;
+}
+.no {
+  color: #a00;
+}
+
+.name-no-match {
+  color: #777;
+}
+.guess-table { border-collapse: collapse; }
+* + th, * + td {
+  border-left: 1px solid silver;
+}
+
+.guess-table th, .guess-table td {
+  padding: 0.1em 0.5em;
+}
+
+.guess-table td:last-of-type {
+  text-align: center;
+}
