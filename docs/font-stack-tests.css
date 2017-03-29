@@ -102,3 +102,7 @@ h3 {
 table {
   margin-bottom: 1.2em;
 }
+
+.nowrap {
+  white-space: nowrap;
+}
