@@ -29,6 +29,26 @@ h3 {
   line-height: 1.4;
 }
 
+
+.fs-24 {
+  font-size: 24px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-11 {
+  font-size: 11px;
+}
+.fs-10 {
+  font-size: 10px;
+}
+
 .fw-100 {
   font-weight: 100;
 }
