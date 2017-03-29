@@ -13,17 +13,20 @@ html, body {
 }
 
 h1 {
-  font-size: 250%/1.4;
+  font-size: 250%;
+  line-height: 1.4;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 150%/1.4;
+  font-size: 150%;
+  line-height: 1.4;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 200%/1.4;
+  font-size: 200%;
+  line-height: 1.4;
 }
 
 .fw-100 {
