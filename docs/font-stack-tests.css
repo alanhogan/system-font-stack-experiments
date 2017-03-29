@@ -4,6 +4,7 @@ html {
 body {
   padding: 1.6em 0.8em;
   margin: 0 auto;
+  font-size: 16px;
 }
 html, body {
   font-family: Palatino, Garamond, serif;
@@ -22,11 +23,13 @@ h2 {
   font-size: 150%;
   line-height: 1.4;
   font-weight: 300;
+  margin: 0.2em 0;
 }
 
 h3 {
   font-size: 200%;
   line-height: 1.4;
+  margin: 0.2em 0;
 }
 
 
@@ -129,9 +132,10 @@ table {
 
 
 .guess-box {
-  padding: 0.6em;
+  padding: 0.2em 0.8em;
   border: 1px solid #aaa;
   border-radius: 4px;
+  margin: 0.6em 0;
 }
 
 
@@ -157,4 +161,9 @@ table {
 
 .guess-table td:last-of-type {
   text-align: center;
+}
+
+.UA {
+  color: gray;
+  font-size: 12px;
 }
