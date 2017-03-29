@@ -50,6 +50,10 @@ h2 {
   font-weight: 900;
 }
 
+.fw-inherit {
+  font-weight: inherit;
+}
+
 
 .github-2017 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
