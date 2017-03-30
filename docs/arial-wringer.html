@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System Font Stack Experiments</title>
+  <meta name="description" content="" /> <!-- TODO: Desc -->
+  <link rel="stylesheet" href="font-stack-tests.css" />
+</head>
+<body style="font-family: Arial, serif;">
+
+  <h1>System font stack wringer: Arial only</h1>
+  <p>Stack: <code>Arial,serif</code></p>
+
+  <p>For comparison purposes only.</p>
+
+  <p>
+    See also: <a href=emoji.html>emoji test page</a>,
+    <a href="index.html">index</a>,
+    <a href="https://github.com/alanhogan/system-font-stack-experiments">source</a>
+  </p>
+
+  <div class="guess-box">
+    <h3>Detecting present fonts from the stack</h3>
+    <p id="probable-font"></p>
+
+    <table border="0" class="guess-table">
+      <thead><th>Font</th><th>Match?</th></thead>
+      <tbody id="font-table">
+      </tbody>
+    </table>
+
+    <p class="UA">
+      User Agent:
+      <script type="text/javascript">document.write(navigator.userAgent)</script>
+      <!-- Yes, I know it's not performant to use document.write. This is a test page. -->
+    </p>
+  </div>
+
+  <section class="fw-100">
+    <h3 class="fw-inherit">Weight: 100 (thin)</h3>
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+  </section>
+
+  <section class="fw-200">
+    <h3 class="fw-inherit">Weight: 200 (ultra-light)</h3>
+
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+  </section>
+
+
+  <section class="fw-300">
+    <h3 class="fw-inherit">Weight: 300 (light)</h3>
+
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+  </section>
+
+  <section class="fw-400">
+    <h3 class="fw-inherit">Weight: 400 (normal, regular)</h3>
+
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+  </section>
+
+
+  <section class="fw-500">
+    <h3 class="fw-inherit">Weight: 500 (medium)</h3>
+
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+  </section>
+
+  <section class="fw-600">
+    <h3 class="fw-inherit">Weight: 600 (semi-bold)</h3>
+
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+  </section>
+
+
+  <section class="fw-700">
+    <h3 class="fw-inherit">Weight: 700 (bold)</h3>
+
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+  </section>
+
+  <section class="fw-800">
+    <h3 class="fw-inherit">Weight: 800 (extra-bold)</h3>
+
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+  </section>
+
+  <section class="fw-900">
+    <h3 class="fw-inherit">Weight: 900 (black)</h3>
+
+
+    <p class="fs-24"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-18"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-14"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-12"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-11"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+
+    <p class="fs-10"><i>Quickly,</i>
+      <span lang="cz">vyžadují vaši</span>
+      <span lang="pl">wydajność … zgłoszeń.</span>
+
+      <span class="nowrap">¯\_(ツ)_/¯</span>
+
+      <span lang="zh-CN">提供几项工 户服务团队的业绩</span>
+
+      <span lang="zh-TW">您的業務越大，您的支援團隊就需要越高的效率。</span>
+    </p>
+  </section>
+
+
+  <table class="emoji-table">
+    <thead><tr><th>Emoji</th><th>Ambiguous</th><th>Non-Emoji</th></tr></thead>
+    <tbody><tr>
+      <td>&#x2764;&#xFE0F;&#x263A;&#xFE0F;&#x2708;&#xFE0F;</td>
+      <td>&#x2764;&#x263A;&#x2708;</td>
+      <td>&#x2764;&#xFE0E;&#x263A;&#xFE0E;&#x2708;&#xFE0E;</td>
+    </tr></tbody>
+   </table>
+
+<script type="text/javascript" src="font-guesser.js"></script>
+</body>
+</html>
