@@ -109,6 +109,12 @@ h3 {
 .emoji-only-2 {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+.monospace-1 {
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+.monospace-2 {
+  font-family: Consolas, "Liberation Mono", Menlo, "Bitstream Vera Sans Mono", Courier, monospace;
+}
 
 .emoji-table th {
 }
