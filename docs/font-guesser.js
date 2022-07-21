@@ -22,6 +22,12 @@
  * Usage: d = new Detector();
  *        d.detect('font name');
  */
+
+function quotedFontIfNecessary(fontName) {
+  if(/\s/.test(fontName)) { return '\'' + fontName + '\''; }
+  else return fontName;
+}
+
 var Detector = function() {
     // a font will be compared against all the three default fonts.
     // and if it doesn't match all 3 then that font is not available.
@@ -50,11 +56,11 @@ var Detector = function() {
         defaultHeight[baseFonts[index]] = s.offsetHeight; //height for the defualt font
         h.removeChild(s);
     }
-
+  
     function detect(font) {
         var detected = false;
         for (var index in baseFonts) {
-            s.style.fontFamily = font + ',' + baseFonts[index]; // name of the font along with the base font for fallback.
+            s.style.fontFamily = quotedFontIfNecessary(font) + ', ' + baseFonts[index]; // name of the font along with the base font for fallback.
             h.appendChild(s);
             var matched = (s.offsetWidth != defaultWidth[baseFonts[index]] || s.offsetHeight != defaultHeight[baseFonts[index]]);
             h.removeChild(s);
@@ -72,7 +78,7 @@ var d = new Detector();
 function testAndShow(fontName) {
   var result = d.detect(fontName);
   var tbody = document.getElementById('font-table');
-  tbody.innerHTML = tbody.innerHTML + '<tr><td><span class="' + (result ? 'name-match' : 'name-no-match') + '" style="font-family: \'' + fontName.replace(/"'/g,'') + '\', monospace">' + fontName.replace(/</g,'&lt;') + '</span></td><td>' + (result ? '<span class="yes">Yes</span>' : '<span class="no">No</span>') + '</td>';
+  tbody.innerHTML = tbody.innerHTML + '<tr><td><span class="' + (result ? 'name-match' : 'name-no-match') + '" style="font-family: ' + quotedFontIfNecessary(fontName.replace(/"'/g,'')) + ', monospace">' + fontName.replace(/</g,'&lt;') + '</span></td><td>' + (result ? '<span class="yes">Yes</span>' : '<span class="no">No</span>') + '</td>';
 }
 'use strict';
 
