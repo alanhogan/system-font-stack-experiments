@@ -103,6 +103,9 @@ h3 {
 .alan-1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
 }
+.simple-system {
+  font-family: system-ui, sans-serif;
+}
 .emoji-only-1 {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
